@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context="com.example.shoai.splashscreen.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:src="@drawable/download"
+        android:layout_centerInParent="true"
+       />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/logo"
+        android:indeterminateTint="@color/progressBarColor"
+        android:indeterminateTintMode="src_in"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/loadingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:text="Loading"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="@color/progressBarColor"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
